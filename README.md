@@ -1,24 +1,31 @@
-# STOCK-MARKET-PRED
-Prediction of GOOG Stock Market with LSTM and Web Application with Flask.
+# CCXT_Flask_LSTM_Price_Prediction_500Days
 
-Technologies used:
+This repository contains an implementation of a stock price prediction system using LSTM (Long Short-Term Memory) neural networks. The system utilizes the CCXT library for fetching historical stock price data, Flask for building a RESTful API, and TensorFlow for implementing the LSTM model. Additionally, it includes components written in JavaScript, HTML, and CSS for the frontend interface.
 
+## Technologies Used
 - TensorFlow
-
 - Flask
+- CCXT
+- JavaScript
+- HTML
+- CSS
 
-- JavaScript, HTML & CSS
+## Acknowledgements
+This implementation is based on the work available at [guilhermegobbo/GOOG-STOCK-PRED](https://github.com/guilhermegobbo/GOOG-STOCK-PRED/tree/main).
 
+## How to Use
+### Windows
+1. Open your command prompt.
+2. Navigate to the project directory.
+3. Run the following command:
+    ```
+    python api.py
+    ```
 
-LSTM isn't a good algorithm to predict a lot of days ahead of a stock market, but the intention of this project was doing an article on medium where I could explain how to simple build web applications.
-
-
-Medium: https://medium.com/@guilhermegobbo04/constru%C3%A7%C3%A3o-de-aplica%C3%A7%C3%A3o-web-para-modelos-de-ml-flask-html-css-javascript-20185ef4da9b
-
-![image](https://github.com/guilhermegobbo/GOOG-STOCK-PRED/assets/136920721/bcc7c808-5c41-4c9e-a154-6d98d2e965cb)
-
-![image](https://github.com/guilhermegobbo/GOOG-STOCK-PRED/assets/136920721/12d0a7b9-4f5c-41fe-b560-7d6d0bd1d97e)
-
-
-I hope you learn a lot with these codes! Enjoy!
-
+### macOS
+1. Open your terminal.
+2. Navigate to the project directory.
+3. Run the following command:
+    ```
+    python api.py
+    ```

@@ -40,6 +40,9 @@ CORS(app)
 
 
 
+
+
+
 # função para predição com nosso modelo LSTM
 def predict_values_for_future_dates(model, data, start_date, num_dates, time_steps):
     predictions = []
@@ -74,6 +77,7 @@ def forecast(num_dates):
     try:
         # calcular os valores futuros (em USD $)
         predicted_values = predict_values_for_future_dates(model, last_results, start_date, int(num_dates)+1, time_steps)
+        print(predicted_values)
         NEW_DATES = [start_date]
         for _ in range(num_dates):
             data_append = datetime.date(data.index[-1] + pd.DateOffset(days=_+1))

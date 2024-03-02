@@ -29,5 +29,5 @@ This implementation is based on the work available at [guilhermegobbo/GOOG-STOCK
 2. Navigate to the project directory.
 3. Run the following command:
     ```
-    python api.py
+    python3 api.py
     ```

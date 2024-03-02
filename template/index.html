@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ETH Price PREDICTION</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="../static/js.js"></script>
+    <link rel="stylesheet" type="text/css" href="../static/css.css">
+</head>
+<body>
+    <div id="header">
+        <h1>ETH Price PREDICTION</h1>
+    </div>
+    <br><br>
+    <label>จำนวนวันข้างหน้าที่ต้องการทำนาย</label>
+    <br>
+    <label>(ข้อมูลการทำนายเริ่มต้น 02/3/2024)</label>
+    <br>
+    <label>Time Frame Day only</label>
+    <br><br>
+    <input type="number" id="num_dates" required>
+    <br><br>
+    <button type="btn" onclick="BtnClick()">สร้างกราฟผลการทำนาย</button>
+    <br><br>
+    <div id="predictions"></div>
+    <div id="graphDiv"></div>
+</body>
+</html>

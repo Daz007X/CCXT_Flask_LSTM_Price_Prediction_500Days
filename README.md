@@ -1,6 +1,6 @@
 # CCXT_Flask_LSTM_Price_Prediction_500Days
 
-This repository contains an implementation of a stock price prediction system using LSTM (Long Short-Term Memory) neural networks. The system utilizes the CCXT library for fetching historical stock price data, Flask for building a RESTful API, and TensorFlow for implementing the LSTM model. Additionally, it includes components written in JavaScript, HTML, and CSS for the frontend interface.
+This repository contains an implementation of a ETH Price Prediction system using LSTM (Long Short-Term Memory) neural networks. The system utilizes the CCXT library for fetching historical stock price data, Flask for building a RESTful API, and TensorFlow for implementing the LSTM model. Additionally, it includes components written in JavaScript, HTML, and CSS for the frontend interface.
 
 The implementation works with real data, eliminating the need for CSV files or simulated datasets.
 

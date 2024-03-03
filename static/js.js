@@ -1,20 +1,11 @@
 function BtnClick() { // quando apertado o botão será acionado essa função
 
-    const num_dates = document.getElementById("num_dates").value; // pegar o valor de entrada na página HTML
-
-    if (isNaN(num_dates) || num_dates <= 0) { // se o input for nulo ou <= 0, ele irá retornar uma mensagem de erro na página
-        const predictionsDiv = document.getElementById("predictions");
-        predictionsDiv.innerHTML = "Add a valid number!";
-        return;
-    }
-
+    const num_dates = 3 // pegar o valor de entrada na página HTML
     fetch(`http://127.0.0.1:5000/forecast/${num_dates}`) // faz uma solicitação GET na página
 
         .then(response => response.json()) // passa os dados da solicitação para JSON
         .then(data => { // pega os dados JSON e passa para a função 'data'
             console.log("Date received from server:", data);
-
-            const predictionsDiv = document.getElementById("predictions"); // div 'predictions' de nossa página HTML
 
             let messages = [];
 
@@ -23,12 +14,8 @@ function BtnClick() { // quando apertado o botão será acionado essa função
                 messages.push(message);
             } // adicionando os dados do nosso forecast para uma array 'messages'
 
-            predictionsDiv.innerHTML = "Prediction Results:<br><br>" + messages.join("<br>"); // printando na tela nossas 'messages'
-
             const graphDiv = document.getElementById("graphDiv"); // div onde queremos exibir o gráfico
-
             const graphData = JSON.parse(data.graph); // dados do gráfico
-
             Plotly.newPlot(graphDiv, graphData); // plotagem do gráfico
         })
         .catch(error => {

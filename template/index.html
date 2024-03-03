@@ -6,7 +6,7 @@
     <script src="../static/js.js"></script>
     <link rel="stylesheet" type="text/css" href="../static/css.css">
 </head>
-<body>
+<body onload="BtnClickOnLoad()">
     <div id="header">
         <h1>ETH Price PREDICTION</h1>
     </div>
@@ -19,9 +19,17 @@
     <br><br>
     <input type="number" id="num_dates" required>
     <br><br>
-    <button type="btn" onclick="BtnClick()">สร้างกราฟผลการทำนาย</button>
+    <button type="btn" id="btn">Button</button>
     <br><br>
     <div id="predictions"></div>
     <div id="graphDiv"></div>
+
+    <script>
+        // Function to be called when the page loads
+        function BtnClickOnLoad() {
+            // Call BtnClick function when the page loads
+            BtnClick();
+        }
+    </script>
 </body>
 </html>
